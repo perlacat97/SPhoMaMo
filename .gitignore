@@ -3,6 +3,10 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=latex,windows,macos,linux
 
 ### LaTeX ###
+
+## Output
+latex/2020-GS-ARTICLE.pdf
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
