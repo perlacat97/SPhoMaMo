@@ -7,6 +7,10 @@
 ## Output
 latex/2020-GS-ARTICLE.pdf
 
+## Word/Char count
+latex/includes/char.txt
+latex/includes/words.txt
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
