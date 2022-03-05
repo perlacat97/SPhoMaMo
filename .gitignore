@@ -11,6 +11,11 @@ latex/2020-GS-ARTICLE.pdf
 latex/includes/char.txt
 latex/includes/words.txt
 
+## JabRef
+*.sav
+*.tmp
+*.bib.sav.tmp
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
