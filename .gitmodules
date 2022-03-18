@@ -1,0 +1,3 @@
+[submodule "latex/stereo-pairs-polar-patterns"]
+	path = latex/stereo-pairs-polar-patterns
+	url = https://gitlab.com/giuseppesilvi/stereo-pairs-polar-patterns.git
