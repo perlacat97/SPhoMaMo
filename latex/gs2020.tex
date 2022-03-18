@@ -4,13 +4,16 @@
 %-------------------------------- PACKAGES AND OTHER DOCUMENT CONFIGURATIONS ---
 \documentclass[
 	a4paper,
-	twocolumn
+	twocolumn,
+	twoside,
+	openright
 ]{article}
 \usepackage[
 	top=20mm,
 	bottom=25mm,
 	textwidth=17.2cm,
-	columnsep=0.8cm
+	columnsep=0.8cm,
+	bindingoffset=1cm
 ]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[\mylanguages]{babel}
@@ -22,7 +25,16 @@
 \usepackage[usenames]{color}
 \usepackage{xcolor}
 \usepackage{amssymb}
-\usepackage{hyperref} % For hyperlinks in the PDF
+\usepackage[
+  colorlinks=true,
+  linkcolor=black,
+	anchorcolor=black,
+	citecolor=black,
+	filecolor=black,
+	menucolor=black,
+	runcolor=black,
+	urlcolor=black
+	]{hyperref} % For hyperlinks in the PDF
 \usepackage{Alegreya}
 \linespread{1.05}
 \usepackage{
