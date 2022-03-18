@@ -4,6 +4,29 @@
 %  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
 %where you can also make suggestions and rate matlab2tikz.
 %
+\documentclass[12pt]{article}
+\usepackage[margin=0.5in,paper=a4paper]{geometry} %Shrinking margins to 0.5in
+\usepackage[x11names]{xcolor}                     %Additional colors
+\usepackage{tikz}
+\usepackage{pgfplots}
+  \pgfplotsset{compat=newest}
+  %% the following commands are needed for some matlab2tikz features
+  \usetikzlibrary{plotmarks}
+  \usetikzlibrary{arrows.meta}
+  \usepgfplotslibrary{patchplots}
+  \usepackage{grffile}
+  \usepackage{amsmath}
+
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}%
+\usetikzlibrary{backgrounds}
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
 \definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
 \definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
 %
@@ -24878,3 +24901,7 @@ axis y line*=left
 ]
 \end{axis}
 \end{tikzpicture}%
+
+\end{center}
+
+\end{document}
