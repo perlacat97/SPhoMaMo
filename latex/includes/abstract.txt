@@ -1,5 +1,12 @@
-PROBLEMA:
-
-LETTERATURA ESISTENTE: giuseppe
-
-OBIETTIVI INNOVATIVI DELLA RICERCA:
+Attraverso una buona tecnica di ripresa stereofonica è possibile ricostruire nel
+nostro cervello un’immagine sonora che si avvicini alla percezione reale, e
+trasmettere nel miglior modo possibile il contenuto culturale ed emozionale
+dell’evento musicale. La letteratura specifica descrive le tecniche di ripresa
+stereofonica esclusivamente mediante applicazioni microfoniche pratiche. Non
+esiste una trattazione matematica delle caratteristiche di ripresa né una
+valutazione analitica delle configurazioni a prescindere dalle caratteristiche
+dei trasduttori utilizzati. Lo scopo di questa ricerca è quello di avviare
+un'analisi sulle principali configurazioni di ripresa stereofonica in modo da
+avere modelli matematici di riferimento con cui confrontare il comportamento
+fisico dei trasduttori e delle conseguenze che questi hanno nei confronti della
+configurazione scelta.
