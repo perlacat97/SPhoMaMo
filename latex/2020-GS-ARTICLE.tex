@@ -31,21 +31,45 @@
 %---------------------------------------------------------------- INTRODUZIONE -
 %-------------------------------------------------------------------------------
 \section*{INTRODUZIONE}
-Attraverso una buona tecnica di ripresa stereofonica è possibile ricostruire nel
-nostro cervello un’immagine sonora che si avvicini alla percezione reale, e
-trasmettere nel miglior modo possibile il contenuto culturale ed emozionale
-dell’evento musicale. La letteratura specifica descrive le tecniche di ripresa
-stereofonica esclusivamente mediante applicazioni microfoniche pratiche.
-\cite{je:05} \cite{gb:09} \cite{bb:98} \cite{fr:21} Non esiste una trattazione matematica
-delle caratteristiche di ripresa né una valutazione analitica delle
+Attraverso una buona tecnica di ripresa stereofonica è possibile costruire
+un’informazione sonora multicanale che rappresenti in modo convincente e si
+avvicini alla percezione del segnale sonoro reale ripreso. In musica, più che
+nella ripresa paesagistica, lo scopo è trasmettere nel miglior modo possibile il
+contenuto culturale ed emozionale dell’evento musicale conservandone le modalità
+di propagazione nello spazio.
+
+La letteratura specifica descrive le tecniche di ripresa stereofonica
+esclusivamente mediante applicazioni microfoniche pratiche derivandole da
+logiche industriali discografiche. Questo tipo di narrazione più che analizzare
+i principi di funzionamento per ampliare la comprensione del modello prima
+dell'implementazione limita il ragionamento a fatti pratici rapportando
+semplicisticamente ripresa a diffusione, in un sistema apparentemente di
+riferimento.
+
+\begin{quote}
+Modern stereophonic recording, or stereo as we normally call it, makes use of
+many diverse microphone arrays and techniques. At the basis of them all are a
+set of fundamental two- or three-microphone arrays for picking up a stereo sound
+stage for reproduction over a pair of loud- speakers. In stereo reproduction the
+listener is able to perceive images on the stereo sound stage which may span the
+entire angular width of the loudspeaker array. \cite{je:05}%The sound sources that are
+%perceived between the loudspeakers are known as “phantom images,” because they
+%appear at positions where there are no physical, or real sources of sound.
+\end{quote}
+
+Sistemi di due o tre microfoni riprodotti su coppie di diffusori sono \emph{una}
+possibile implementazione stereofonica, \emph{non l'unica}, non necessariamente
+a base due, come vedremo in seguito.
+
+Inoltre non esiste in letteratura \cite{je:05} \cite{gb:09} \cite{bb:98}
+\cite{fr:21} una trattazione matematica delle caratteristiche di ripresa né una valutazione analitica delle
 configurazioni a prescindere dalle caratteristiche dei trasduttori utilizzati.
 Lo scopo di questa ricerca è quello di avviare un'analisi sulle principali
 configurazioni di ripresa stereofonica in modo da avere modelli matematici di
 riferimento con cui confrontare il comportamento fisico dei trasduttori e delle
 conseguenze che questi hanno nei confronti della configurazione scelta.
 
-Questa ricerca pone l'obiettivo di colmare il gap letterario nei confronti
-della tecnologia AMBISONICS.
+La ricerca prende ispirazione 
 
 Tra i processi algoritmici analizzati per creare stereofonia da un segnale mono,
 sono presenti le tecniche PseudoStereo.
@@ -59,7 +83,7 @@ microfoni, sia per registrare che per amplificare, è di fondamentale importanza
 un’analisi delle varie configurazioni di coppie stereofoniche perché,
 soprattutto nel campo della registrazione, esse possono, e molto spesso devono,
 essere considerate come il punto di partenza per l’installazione di un set-up
-di registrazione.
+di registrazione. \cite{ps:12}
 \end{quote}
 
 Questa premessa di Piero Schiavoni ci riporta al principio di questo percorso
