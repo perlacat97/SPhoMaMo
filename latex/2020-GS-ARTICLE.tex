@@ -214,6 +214,15 @@ l’influenza degli spostamenti di fase dovuti al suono ripreso dai microfoni
 nei rispettivi quadranti negativi.
 
 vedi gerzon
+%--------------------------------------------
+%----------------larghezza massima del codice
+\begin{lstlisting}
+  blumlein(r) = _ <: left(r), right(r)
+  with{
+    left(r) = _*(sin(r) + cos(r))/sqrt(2);
+    right(r) = _*(cos(r) - sin(r))/sqrt(2);
+  };
+\end{lstlisting}
 % \vfill\null
 \begin{figure}[h]
 \begin{center}
@@ -264,11 +273,11 @@ riverbero ambientale.
 %--------------------------------------------
 %----------------larghezza massima del codice
 \begin{lstlisting}
-mspan(x,p,rad) = m,s
-with{
-  m = (p*x)+((1-p)*(x*cos(rad)));
-  s = x*(sin(-rad));
-};
+  xy180(r) = _ <: left(r), right(r)
+  with{
+    left(r) = _*(sin(r) + 1))/2/sqrt(2);
+    right(r) = _*(1 - sin(r))/2/sqrt(2);
+  };
 \end{lstlisting}
 %-------------------------------------------------------------------------------
 \subsubsection*{XY135}
@@ -284,6 +293,13 @@ utilizzata quando si voglia raggiungere questo risultato.
 \label{xy135}
 \end{center}
 \end{figure}
+\begin{lstlisting}
+  xy135(r) = _ <: left(r), right(r)
+  with{
+    left(r) = _*(---*sin(r) + ---*cos(r) + 1)/2;
+    right(r) = _*(---*cos(r) - ---*sin(r) + 1)/2;
+  };
+\end{lstlisting}
 %-------------------------------------------------------------------------------
 \subsubsection*{XY120}
 % \vfill\null
@@ -294,6 +310,13 @@ utilizzata quando si voglia raggiungere questo risultato.
 \label{xy120}
 \end{center}
 \end{figure}
+\begin{lstlisting}
+  xy120(r) = _ <: left(r), right(r)
+  with{
+    left(r) = _*(sqrt(3)/2*sin(r) + 1/2*cos(r) + 1)/2/;
+    right(r) = _*(1/2*cos(r) - sqrt(3)/2*sin(r) + 1)/2;
+  };
+\end{lstlisting}
 %-------------------------------------------------------------------------------
 \subsubsection*{XY90}
 Riducendo ancora l’angolatura, abbiamo la coppia angolata a $90°$ che, come
@@ -301,6 +324,13 @@ evidenziato nella tabella di fig. \ref{fig:localizzazione}, è la configurazione
 che presenta la più ridotta apertura stereo, tendendo a concentrare i suoni
 verso il centro. Può essere desiderabile quando il fronte sonoro è molto ampio
 e si sia obbligati a riprenderlo molto da vicino.
+\begin{lstlisting}
+  xy90(r) = _ <: left(r), right(r)
+  with{
+    left(r) = _*(sin(r) + cos(r) + sqrt(2))/2/sqrt(2);
+    right(r) = _*(cos(r) - sin(r) + sqrt(2))/2/sqrt(2);
+  };
+\end{lstlisting}
 % \vfill\null
 \begin{figure}[h]
 \begin{center}
@@ -518,17 +548,31 @@ suono laterale (side).
 %\input{img/spectra.tex}
 
 \begin{figure*}[t]
-\centering
-\includegraphics[width=.97\textwidth]{img/statistiche/pdf/amplitude_histograms}
-\caption{amplitude histograms.}
-\label{amphist}
+  \centering
+  \includegraphics[width=.97\textwidth]{img/statistiche/pdf/amplitude_histograms_1}
+  \caption{amplitude histograms.}
+  \label{amphist1}
+  \end{figure*}
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=.97\textwidth]{img/statistiche/pdf/amplitude_histograms_2}
+  \caption{amplitude histograms.}
+  \label{amphist2}
 \end{figure*}
 
 \begin{figure*}[t]
-\centering
-\includegraphics[width=.97\textwidth]{img/statistiche/pdf/spectra}
-\caption{spettri.}
-\label{spettri}
+  \centering
+  \includegraphics[width=.97\textwidth]{img/statistiche/pdf/spectra_1}
+  \caption{spettri.}
+  \label{spettri1}
+\end{figure*}
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=.97\textwidth]{img/statistiche/pdf/spectra_2}
+  \caption{spettri.}
+  \label{spettri2}
 \end{figure*}
 
 Einstein's theory has important astrophysical implications. For example, it
