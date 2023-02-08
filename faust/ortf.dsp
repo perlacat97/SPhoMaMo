@@ -1,5 +1,10 @@
 import("stereomodels.lib");
 
+// references
+// https://en.wikipedia.org/wiki/Inverse-square_law
+// https://en.wikipedia.org/wiki/Absorption_(acoustics)
+// https://physicscalc.com/physics/distance-attenuation-calculator/
+
 a_d = hslider( "Source angle [unit:°]", 0, -180 , 180 , .01) : si.smoo;
 r_m = hslider( "Source distance [unit:m]", 1, 0 , 10 , .01) : si.smoo;
 

@@ -35,7 +35,7 @@ with {
 //process = os.osc(1000) <: mid_side(p, d2r(sw(-180, 180, 1))); // : sdmx; // sweep sull'angolo di provenienza del segnale
 //================================================ SUM AND DIFFERENCE MATRIX ===
 //==============================================================================
-sdmx = _, _ <: +/2, -/2; // matrice somma e sottrazione normalizzata; MS -> LR (M+S=L, M-S=R) o anche LR -> MS (L+R=M, L-R=S)
+sdmx = _, _ <: +/sqrt(2), -/sqrt(2); // matrice somma e sottrazione normalizzata; MS -> LR (M+S=L, M-S=R) o anche LR -> MS (L+R=M, L-R=S)
 //================================================================= BLUMLEIN ===
 //==============================================================================
 blumlein(r) = _ <: left(r), right(r)
